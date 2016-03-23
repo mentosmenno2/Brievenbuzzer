@@ -1,0 +1,585 @@
+@font-face {
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/Pacifico.woff2") format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+	font-family: 'Rancho';
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/Rancho.woff2") format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.navbuttons {
+    border-radius:25px;
+    height:40px;
+    width:120px;
+    text-align:center;
+    line-height:40px;
+    vertical-align:50px;
+    display:inline-block;
+	cursor:pointer;  /*toevoegen voor vingertje*/
+	font-family: Arial;
+
+
+    /* het volgende maakt het niet mogelijk de buttontekst te selecteren*/
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navbuttons:hover {
+	box-shadow: 0px 0px 10px #fff;
+	-moz-box-shadow: 0 0 10px #fff;
+	-webkit-box-shadow: 0 0 10px #fff;
+}
+
+.navbuttons:active {
+	box-shadow: 0px 0px 40px #fff;
+	-moz-box-shadow: 0 0 40px #fff;
+	-webkit-box-shadow: 0 0 40px #fff;
+}
+
+.scrollleftrightbutton {
+    background-color: #DEDEDE;
+	border:5px solid black;
+    border-radius:100%;
+    height:70px;
+    width:70px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:70px;
+    font-family: 'Rancho', cursive;
+    font-size:70px;
+    cursor:pointer;
+    position:absolute;
+	z-index: 999;
+
+    /* het volgende maakt het niet mogelijk de buttontekst te selecteren*/
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.scrollleftrightbutton:hover {
+	box-shadow: 0px 0px 10px #fff;
+	-moz-box-shadow: 0 0 10px #fff;
+	-webkit-box-shadow: 0 0 10px #fff;
+}
+
+.scrollleftrightbutton:active {
+	box-shadow: 0px 0px 40px #fff;
+	-moz-box-shadow: 0 0 40px #fff;
+	-webkit-box-shadow: 0 0 40px #fff;
+}
+
+.content {
+    opacity:0;
+    display:none;
+}
+
+.p2 {
+	text-align:center;
+}
+
+.installatieimg {
+	width:500px;
+}
+
+.p3 {
+	text-align:center;
+}
+
+.makerfoto {
+	margin: 0 auto;
+	width:400px;
+	height:400px;
+	background-repeat: no-repeat;
+	background-size:100%;
+	border:10px solid #FFFFFF;
+	border-radius:100%;
+}
+
+.makerp {
+	text-align: center;
+}
+
+#logo {
+    position:fixed;
+    top:0;
+    right:0;
+    width:180px;
+    padding-top:10px;
+	padding-right:10px;
+    z-index:998;
+	cursor: pointer;
+}
+
+#menuimg {
+	display: none;
+}
+
+#scrollmenu {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    padding-top:10px;
+    z-index:997;
+}
+
+
+
+#page1button {
+    background-color:#FF9966;
+}
+
+
+#page2button {
+    background-color:#FFFF66;
+}
+
+
+#page3button {
+    background-color:lightgreen;
+}
+
+
+#page4button {
+    background-color:lightblue;
+}
+
+
+
+#page1 {
+    background-color:#FF9966;
+}
+
+
+#page2 {
+    background-color:#FFFF66;
+}
+
+
+#page3 {
+    background-color:lightgreen;
+}
+
+
+#page4 {
+    background-color:lightblue;
+}
+
+#content1-1 {
+    opacity:1;
+    display:block;
+}
+
+#leftbutton1 {
+    top: 50%;
+    left: 50px;
+	opacity:0;
+    display:none;
+}
+
+#rightbutton1 {
+    top: 50%;
+    right: 50px;
+}
+
+#p1-1 {
+	text-align:center;
+}
+
+#header {
+	height:200px;
+	float: left;
+	width:200px;
+	margin-right:10px;
+}
+
+#headerlogo {
+	float:right;
+	height:200px;
+	margin-left:10px;
+}
+
+#headertxt1 {
+	font-size:40px;
+	line-height:100px;
+	vertical-align:middle;
+}
+
+#headertxt2 {
+	font-size:60px;
+	font-weight:900;
+	line-height:100px;
+	vertical-align:middle;
+}
+
+#besteldimg {
+	height:200px;
+	float:right;
+	margin-left:10px;
+}
+
+#oplossingimg {
+	height:200px;
+	float:left;
+	margin-right:10px;
+}
+
+#content2-1 {
+    opacity:1;
+    display:block;
+}
+
+#leftbutton2 {
+    top: 50%;
+    left: 50px;
+	opacity:0;
+    display:none;
+}
+
+#rightbutton2 {
+    top: 50%;
+    right: 50px;
+}
+
+#content3-1 {
+    opacity:1;
+    display:block;
+}
+
+#leftbutton3 {
+    top: 50%;
+    left: 50px;
+	opacity:0;
+    display:none;
+}
+
+#rightbutton3 {
+    top: 50%;
+    right: 50px;
+}
+
+#flatbrievenbussenimg {
+	height:200px;
+	float: left;
+	padding-right:10px;
+}
+
+#brievenbusinvoortuinimg {
+	height:200px;
+	float: right;
+	padding-left:10px;
+}
+
+#trillendetelefoonimg {
+	height:200px;
+	float: left;
+	padding-right:10px;
+}
+
+#leftbutton4 {
+    top: 50%;
+    left: 50px;
+	opacity:0;
+    display:none;
+}
+
+#rightbutton4 {
+    top: 50%;
+    right: 50px;
+}
+
+#content4-1 {
+    opacity:1;
+    display:block;
+}
+
+#hrimg {
+	width: 200px;
+}
+
+#kallefoto {
+	background-image:url("images/kalle.jpg");
+}
+
+#mennohfoto {
+	background-image:url("images/menno h.jpg");
+}
+
+#vincentfoto {
+	background-image:url("images/vincent.jpg");
+}
+
+#mennoefoto {
+	background-image:url("images/menno e.JPG");
+}
+
+#timfoto {
+	background-image:url("images/tim.jpg");
+}
+
+html {
+    height:100%;
+}
+
+
+body {
+    height:100%;
+    margin:0px;
+    padding:0px;
+
+    /* dit zorgt ervoor dat de gehele pagina niet te kopieren is*/
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+section {
+	min-height: 100%;
+	height:auto;
+	padding:0;
+	margin: 0;
+    position: relative;
+}
+
+h1{
+    margin-top:0px;
+    text-align:center;
+	padding-top:50px;
+	padding-bottom:0px;
+	font-family:'Pacifico', cursive;
+	font-size:55px;
+    margin-left:200px;
+    margin-right:200px;
+	cursor:default;
+}
+
+
+
+p {
+    margin-left:200px;
+    margin-right:200px;
+    font-family: 'Rancho', cursive;
+    font-size:40px;
+	margin-bottom:0;
+	cursor:default;
+}
+
+@media all and (max-width: 900px) {
+
+h1{
+	padding-top:10px;
+	font-size:30px;
+    margin-left:60px;
+    margin-right:60px;
+}
+
+p {
+    margin-left:60px;
+    margin-right:60px;
+	text-align:center;
+    font-size:20px;
+}
+
+#menuimg {
+	display: block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:50px;
+    padding-top:5px;
+	padding-left:5px;
+    z-index:998;
+	cursor: pointer;
+}
+
+#logo {
+	width:50px;
+	position:fixed;
+    width:50px;
+    padding-top:5px;
+	padding-right:5px;
+    z-index:998;
+	cursor: pointer;
+}
+
+.navbuttons {
+    border-radius:25px;
+    height:40px;
+    width:120px;
+    text-align:center;
+    line-height:40px;
+    vertical-align:50px;
+    display:block;
+	margin:5px;
+}
+
+.scrollleftrightbutton {
+    border-radius:100%;
+    height:40px;
+    width:40px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:40px;
+    font-family: 'Rancho', cursive;
+    font-size:40px;
+    cursor:pointer;
+    position:absolute;
+	z-index: 997;
+
+    /* het volgende maakt het niet mogelijk de buttontekst te selecteren*/
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+#scrollmenu {
+	border:5px solid black;
+	border-radius:25px;
+	width: auto;
+    top:70px;
+	left:5px;
+	display:none;
+	background-color:black;
+	padding-top:0px;
+	z-index: 999;
+}
+
+#header {
+	height:100px;
+	float: left;
+	margin-right:10px;
+}
+
+#headerlogo {
+	float:right;
+	height:100px;
+	margin-left:10px;
+}
+
+#leftbutton1 {
+    left: 5px;
+}
+
+#rightbutton1 {
+    right: 5px;
+}
+
+#leftbutton2 {
+    left: 5px;
+}
+
+#rightbutton2 {
+    right: 5px;
+}
+
+#leftbutton3 {
+    left: 5px;
+}
+
+#rightbutton3 {
+    right: 5px;
+}
+
+#leftbutton4 {
+    left: 5px;
+}
+
+#rightbutton4 {
+    right: 5px;
+}
+
+#headertxt2 {
+	font-size:40px;
+	line-height:40px;
+}
+
+#header {
+	height:80px;
+	display:block;
+	float: none;
+	margin:0 auto;
+	margin-bottom:5px;
+}
+
+#headerlogo {
+	float:none;
+	display:block;
+	height:80px;
+	margin: 0 auto;
+}
+
+#besteldimg {
+	display:block;
+	margin: 0 auto;
+	height:100px;
+	float:none;
+}
+
+#oplossingimg {
+	display:block;
+	margin: 0 auto;
+	height:100px;
+	float:none;
+}
+
+.installatieimg {
+	width: 100%;
+	max-width: 500px;
+}
+
+#flatbrievenbussenimg {
+	display:block;
+	margin: 0 auto;
+	height:100px;
+	float:none;
+}
+
+#brievenbusinvoortuinimg {
+	display:block;
+	margin: 0 auto;
+	height:100px;
+	float:none;
+}
+
+#trillendetelefoonimg {
+	display:block;
+	margin: 0 auto;
+	height:100px;
+	float:none;
+}
+
+#hrimg {
+	width: 100px;
+}
+
+.makerfoto {
+	width:100px;
+	height:100px;
+	border:5px solid #FFFFFF;
+}
+
+}
